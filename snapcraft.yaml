@@ -1,0 +1,27 @@
+name: jetbrains-toolbox
+base: core22
+version: 3.2.0.65851
+summary: JetBrains Toolbox App
+description: |
+  JetBrains Toolbox packaged as a Snap.
+
+grade: devel
+confinement: strict
+
+apps:
+  toolbox:
+    command: jetbrains-toolbox/jetbrains-toolbox
+    desktop: jetbrains-toolbox.desktop
+    plugs:
+      - network
+      - home
+      - desktop
+      - desktop-legacy
+      - x11
+      - wayland
+      - opengl
+
+parts:
+  toolbox:
+    plugin: dump
+    source: .
