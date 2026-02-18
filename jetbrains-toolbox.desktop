@@ -2,7 +2,7 @@
 Type=Application
 Name=JetBrains Toolbox
 Exec=jetbrains-toolbox/jetbrains-toolbox
-Icon=${SNAP}/icon.png
+Icon=icon.png
 StartupNotify=false
 Terminal=false
 MimeType=x-scheme-handler/jetbrains;
