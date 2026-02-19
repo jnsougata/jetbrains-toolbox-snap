@@ -1,16 +1,19 @@
 name: jetbrains-toolbox
-base: core22
+base: core24
 version: 3.2.0.65851
 summary: JetBrains Toolbox App
-description: |
-  JetBrains Toolbox packaged as a Snap.
+description: JetBrains Toolbox packaged as a Snap.
+license: MIT
+type: app
+icon: snap/gui/icon.svg
+
 
 grade: devel
-confinement: strict
+confinement: classic
 
 apps:
-  toolbox:
-    command: jetbrains-toolbox/jetbrains-toolbox
+  jetbrains-toolbox:
+    command: src/jetbrains-toolbox
     desktop: jetbrains-toolbox.desktop
     plugs:
       - network
@@ -22,6 +25,6 @@ apps:
       - opengl
 
 parts:
-  toolbox:
+  jetbrains-toolbox:
     plugin: dump
     source: .

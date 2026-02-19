@@ -25,10 +25,7 @@ VERSION=$(echo "$VERSION" | sed 's#^\./##')
 echo "Detected version: $VERSION"
 
 echo "Normalizing directory name..."
-mv "$EXTRACTED_DIR/bin" jetbrains-toolbox
-echo "Cleaning up..."
-rm "$TARBALL"
-rm -rf "$EXTRACTED_DIR"
+mv "$EXTRACTED_DIR/bin" src
 
 echo "Updating snapcraft.yml..."
 sed -i "s/^\(version:\s*\).*/\1$VERSION/" snapcraft.yaml
@@ -36,3 +33,8 @@ echo "Build script completed successfully."
 
 echo "Packing snap..."
 snapcraft pack --use-lxd
+
+echo "Cleaning up..."
+rm "$TARBALL"
+rm -rf "$EXTRACTED_DIR"
+rm -rf src
