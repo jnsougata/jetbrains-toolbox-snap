@@ -1,4 +1,5 @@
 name: jetbrains-toolbox
+title: Manage your IDEs the easy way
 base: core24
 version: 3.2.0.65851
 summary: JetBrains Toolbox App
@@ -6,9 +7,11 @@ description: JetBrains Toolbox packaged as a Snap.
 license: MIT
 type: app
 icon: snap/gui/icon.svg
+website: https://www.jetbrains.com/toolbox-app/
+source-code: https://github.com/jnsougata/jetbrains-toolbox-snap
+contact: jnsougata@gmail.com
 
-
-grade: devel
+grade: stable
 confinement: classic
 
 apps:
