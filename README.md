@@ -15,7 +15,7 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 ## How to Build
 To build the Snap package locally, follow these steps:
 
-1. Follow the instructions to set up `Snapcraft` and `lxd` on your system: https://documentation.ubuntu.com/snapcraft/8.6.1/howto/set-up-snapcraft/
+1. Follow the instructions to set up `Snapcraft` and `lxd` on your system: https://documentation.ubuntu.com/snapcraft/stable/how-to/set-up-snapcraft/
    
 2. Clone the repository
 3. Run `build.sh` to build and pack the Snap package.
